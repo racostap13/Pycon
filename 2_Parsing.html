@@ -2,7 +2,7 @@
 <html>
 <head><meta charset="utf-8" />
 
-<title>SBA_Parsing</title>
+<title>2_Parsing</title>
 
 <script src="https://cdnjs.cloudflare.com/ajax/libs/require.js/2.1.10/require.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
@@ -13184,19 +13184,6 @@ div#notebook {
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h1 id="Dataset">Dataset<a class="anchor-link" href="#Dataset">&#182;</a></h1><p>This Dataset from the U.S. Small Business Administration (SBA) can be download from this website</p>
-<p><a href="https://www.sba.gov/advocacy/small-business-profiles-states-and-territories-2016">https://www.sba.gov/advocacy/small-business-profiles-states-and-territories-2016</a></p>
-<h1 id="Experiment:">Experiment:<a class="anchor-link" href="#Experiment:">&#182;</a></h1><p>Assess the pros and cons of the most popular libraries to read pdf's</p>
-<h1 id="Packages-to-install">Packages to install<a class="anchor-link" href="#Packages-to-install">&#182;</a></h1><p>pyPDF2</p>
-<p>tabula-py</p>
-<p>pdfquery</p>
-
-</div>
-</div>
-</div>
-<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
-</div><div class="inner_cell">
-<div class="text_cell_render border-box-sizing rendered_html">
 <h2 id="Path-to-the-files">Path to the files<a class="anchor-link" href="#Path-to-the-files">&#182;</a></h2>
 </div>
 </div>
@@ -13215,13 +13202,6 @@ div#notebook {
 </div>
 </div>
 
-</div>
-<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
-</div><div class="inner_cell">
-<div class="text_cell_render border-box-sizing rendered_html">
-<h2 id="Files-description">Files description<a class="anchor-link" href="#Files-description">&#182;</a></h2>
-</div>
-</div>
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
@@ -13259,36 +13239,6 @@ div#notebook {
 </div>
 </div>
 
-</div>
-<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
-</div><div class="inner_cell">
-<div class="text_cell_render border-box-sizing rendered_html">
-<h2 id="The-pdfs">The pdfs<a class="anchor-link" href="#The-pdfs">&#182;</a></h2>
-</div>
-</div>
-</div>
-<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
-</div><div class="inner_cell">
-<div class="text_cell_render border-box-sizing rendered_html">
-<p><img src="Pages_1-2.png" alt="alt text"></p>
-
-</div>
-</div>
-</div>
-<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
-</div><div class="inner_cell">
-<div class="text_cell_render border-box-sizing rendered_html">
-
-</div>
-</div>
-</div>
-<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
-</div><div class="inner_cell">
-<div class="text_cell_render border-box-sizing rendered_html">
-<p><img src="Pages_3-4.png" alt="alt text"></p>
-
-</div>
-</div>
 </div>
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
@@ -13345,7 +13295,7 @@ div#notebook {
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[12]:</div>
+<div class="prompt input_prompt">In&nbsp;[8]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython2"><pre><span></span><span class="o">%%</span><span class="k">time</span>
@@ -13368,8 +13318,8 @@ file_pdf = load_pdf(path_file)
 
 
 <div class="output_subarea output_stream output_stdout output_text">
-<pre>CPU times: user 328 ms, sys: 8 ms, total: 336 ms
-Wall time: 1.4 s
+<pre>CPU times: user 348 ms, sys: 28 ms, total: 376 ms
+Wall time: 1.49 s
 </pre>
 </div>
 </div>
@@ -13380,7 +13330,7 @@ Wall time: 1.4 s
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[13]:</div>
+<div class="prompt input_prompt">In&nbsp;[9]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython2"><pre><span></span><span class="k">for</span> <span class="n">fp</span> <span class="ow">in</span> <span class="n">file_pdf</span><span class="p">:</span>
@@ -13432,7 +13382,7 @@ Wall time: 1.4 s
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[14]:</div>
+<div class="prompt input_prompt">In&nbsp;[10]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython2"><pre><span></span><span class="k">print</span> <span class="n">file_pdf</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span>
@@ -13471,7 +13421,7 @@ Wall time: 1.4 s
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[54]:</div>
+<div class="prompt input_prompt">In&nbsp;[11]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython2"><pre><span></span><span class="kn">import</span> <span class="nn">tabula</span>
@@ -13484,7 +13434,7 @@ Wall time: 1.4 s
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[55]:</div>
+<div class="prompt input_prompt">In&nbsp;[12]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython2"><pre><span></span><span class="k">def</span> <span class="nf">load_pdf</span><span class="p">(</span><span class="n">path_file</span><span class="p">):</span>
@@ -13504,7 +13454,7 @@ Wall time: 1.4 s
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[56]:</div>
+<div class="prompt input_prompt">In&nbsp;[13]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython2"><pre><span></span><span class="o">%%</span><span class="k">time</span>
@@ -13527,8 +13477,8 @@ file_pdf = load_pdf(path_file)
 
 
 <div class="output_subarea output_stream output_stdout output_text">
-<pre>CPU times: user 8 ms, sys: 0 ns, total: 8 ms
-Wall time: 4.38 s
+<pre>CPU times: user 4 ms, sys: 8 ms, total: 12 ms
+Wall time: 4.37 s
 </pre>
 </div>
 </div>
@@ -13539,7 +13489,7 @@ Wall time: 4.38 s
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[57]:</div>
+<div class="prompt input_prompt">In&nbsp;[14]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython2"><pre><span></span><span class="k">for</span> <span class="n">fp</span> <span class="ow">in</span> <span class="n">file_pdf</span><span class="p">:</span>
@@ -13711,7 +13661,7 @@ Wall time: 4.38 s
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[58]:</div>
+<div class="prompt input_prompt">In&nbsp;[15]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython2"><pre><span></span><span class="n">file_pdf</span><span class="p">[</span><span class="o">-</span><span class="mi">1</span><span class="p">]</span>
@@ -13727,7 +13677,7 @@ Wall time: 4.38 s
 
 <div class="output_area">
 
-    <div class="prompt output_prompt">Out[58]:</div>
+    <div class="prompt output_prompt">Out[15]:</div>
 
 
 
@@ -13908,14 +13858,14 @@ Wall time: 4.38 s
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h2 id="Loading-the-file-with-pdf_query">Loading the file with pdf_query<a class="anchor-link" href="#Loading-the-file-with-pdf_query">&#182;</a></h2><p>PDFQuery is a light wrapper around pdfminer, lxml and pyquery. It's designed to reliably extract data from sets of PDFs with as little code as possible.</p>
+<h2 id="Loading-the-file-with-pdf_query-(An-alternative-to-PdfMiner)">Loading the file with pdf_query (An alternative to PdfMiner)<a class="anchor-link" href="#Loading-the-file-with-pdf_query-(An-alternative-to-PdfMiner)">&#182;</a></h2><p>PDFQuery is a light wrapper around pdfminer, lxml and pyquery. It's designed to reliably extract data from sets of PDFs with as little code as possible.</p>
 
 </div>
 </div>
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[65]:</div>
+<div class="prompt input_prompt">In&nbsp;[16]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython2"><pre><span></span><span class="kn">import</span> <span class="nn">pdfquery</span>
@@ -13928,7 +13878,7 @@ Wall time: 4.38 s
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[66]:</div>
+<div class="prompt input_prompt">In&nbsp;[17]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython2"><pre><span></span><span class="k">def</span> <span class="nf">load_pdf</span><span class="p">(</span><span class="n">path_file</span><span class="p">):</span>
@@ -13950,7 +13900,7 @@ Wall time: 4.38 s
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[67]:</div>
+<div class="prompt input_prompt">In&nbsp;[18]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython2"><pre><span></span><span class="o">%%</span><span class="k">time</span>
@@ -13973,7 +13923,7 @@ file_pdf = load_pdf(path_file)
 
 
 <div class="output_subarea output_stream output_stdout output_text">
-<pre>CPU times: user 3.36 s, sys: 20 ms, total: 3.38 s
+<pre>CPU times: user 3.3 s, sys: 96 ms, total: 3.4 s
 Wall time: 3.44 s
 </pre>
 </div>
@@ -13985,7 +13935,7 @@ Wall time: 3.44 s
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[72]:</div>
+<div class="prompt input_prompt">In&nbsp;[19]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython2"><pre><span></span><span class="n">file_pdf</span>
@@ -14001,13 +13951,13 @@ Wall time: 3.44 s
 
 <div class="output_area">
 
-    <div class="prompt output_prompt">Out[72]:</div>
+    <div class="prompt output_prompt">Out[19]:</div>
 
 
 
 
 <div class="output_text output_subarea output_execute_result">
-<pre>&lt;pdfquery.pdfquery.PDFQuery at 0x7f88f5c984d0&gt;</pre>
+<pre>&lt;pdfquery.pdfquery.PDFQuery at 0x7f5a068b5090&gt;</pre>
 </div>
 
 </div>
@@ -14033,7 +13983,7 @@ Wall time: 3.44 s
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[68]:</div>
+<div class="prompt input_prompt">In&nbsp;[20]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython2"><pre><span></span><span class="k">def</span> <span class="nf">getCoordinates</span><span class="p">(</span><span class="n">pdf</span><span class="p">,</span><span class="n">query</span><span class="p">,</span> <span class="n">type_search</span> <span class="o">=</span> <span class="s2">&quot;Line&quot;</span><span class="p">):</span>
@@ -14056,7 +14006,7 @@ Wall time: 3.44 s
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[69]:</div>
+<div class="prompt input_prompt">In&nbsp;[21]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython2"><pre><span></span><span class="n">g</span> <span class="o">=</span> <span class="n">getCoordinates</span><span class="p">(</span><span class="n">file_pdf</span><span class="p">,</span><span class="s1">&#39;Small Businesses&#39;</span><span class="p">,</span> <span class="n">type_search</span><span class="o">=</span><span class="s1">&#39;Line&#39;</span><span class="p">)</span>
@@ -14074,7 +14024,7 @@ Wall time: 3.44 s
 
 <div class="output_area">
 
-    <div class="prompt output_prompt">Out[69]:</div>
+    <div class="prompt output_prompt">Out[21]:</div>
 
 
 
@@ -14103,7 +14053,7 @@ Wall time: 3.44 s
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[70]:</div>
+<div class="prompt input_prompt">In&nbsp;[22]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython2"><pre><span></span><span class="n">file_pdf</span><span class="o">.</span><span class="n">pq</span><span class="p">((</span><span class="s1">&#39;LTPage[pageid=&quot;</span><span class="si">%s</span><span class="s1">&quot;] LTTextBoxHorizontal:overlaps_bbox(&quot;</span><span class="si">%f</span><span class="s1">,</span><span class="si">%f</span><span class="s1">,</span><span class="si">%f</span><span class="s1">,</span><span class="si">%f</span><span class="s1">&quot;)&#39;</span> <span class="o">%</span> <span class="p">(</span><span class="n">d</span><span class="p">[</span><span class="s1">&#39;pageid&#39;</span><span class="p">],</span>
@@ -14123,7 +14073,7 @@ Wall time: 3.44 s
 
 <div class="output_area">
 
-    <div class="prompt output_prompt">Out[70]:</div>
+    <div class="prompt output_prompt">Out[22]:</div>
 
 
 
@@ -14140,7 +14090,7 @@ Wall time: 3.44 s
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[71]:</div>
+<div class="prompt input_prompt">In&nbsp;[23]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython2"><pre><span></span><span class="n">left_corner</span> <span class="o">=</span> <span class="mi">0</span>
@@ -14161,7 +14111,7 @@ Wall time: 3.44 s
 
 <div class="output_area">
 
-    <div class="prompt output_prompt">Out[71]:</div>
+    <div class="prompt output_prompt">Out[23]:</div>
 
 
 
@@ -14185,7 +14135,7 @@ Wall time: 3.44 s
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[73]:</div>
+<div class="prompt input_prompt">In&nbsp;[24]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython2"><pre><span></span><span class="n">KeyFigures</span> <span class="o">=</span> <span class="p">[</span><span class="s1">&#39;EMPLOYMENT&#39;</span><span class="p">,</span>
@@ -14217,7 +14167,7 @@ Wall time: 3.44 s
 
 <div class="output_area">
 
-    <div class="prompt output_prompt">Out[73]:</div>
+    <div class="prompt output_prompt">Out[24]:</div>
 
 
 
@@ -14251,7 +14201,7 @@ Wall time: 3.44 s
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[80]:</div>
+<div class="prompt input_prompt">In&nbsp;[25]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython2"><pre><span></span><span class="k">def</span> <span class="nf">info1</span><span class="p">(</span><span class="n">file_pdf</span><span class="p">):</span>
@@ -14284,7 +14234,7 @@ Wall time: 3.44 s
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[81]:</div>
+<div class="prompt input_prompt">In&nbsp;[26]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython2"><pre><span></span><span class="n">info1</span><span class="p">(</span><span class="n">file_pdf</span><span class="p">)</span>
@@ -14300,7 +14250,7 @@ Wall time: 3.44 s
 
 <div class="output_area">
 
-    <div class="prompt output_prompt">Out[81]:</div>
+    <div class="prompt output_prompt">Out[26]:</div>
 
 
 
@@ -14338,7 +14288,7 @@ Wall time: 3.44 s
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[82]:</div>
+<div class="prompt input_prompt">In&nbsp;[27]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython2"><pre><span></span><span class="k">def</span> <span class="nf">getTable</span><span class="p">(</span><span class="n">file_pdf</span><span class="p">,</span> <span class="n">col_width</span><span class="p">,</span> <span class="n">row_space</span><span class="p">,</span> <span class="n">row_height</span><span class="p">,</span><span class="n">title</span><span class="p">,</span><span class="n">bottom_corner_dif</span><span class="p">,</span><span class="n">headers</span><span class="p">,</span><span class="n">col_left_align</span><span class="p">):</span>
@@ -14383,7 +14333,7 @@ Wall time: 3.44 s
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[83]:</div>
+<div class="prompt input_prompt">In&nbsp;[28]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython2"><pre><span></span><span class="k">def</span> <span class="nf">info2</span><span class="p">(</span><span class="n">file_pdf</span><span class="p">):</span>
@@ -14417,7 +14367,7 @@ Wall time: 3.44 s
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[84]:</div>
+<div class="prompt input_prompt">In&nbsp;[29]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython2"><pre><span></span><span class="n">info2</span><span class="p">(</span><span class="n">file_pdf</span><span class="p">)</span>
@@ -14433,7 +14383,7 @@ Wall time: 3.44 s
 
 <div class="output_area">
 
-    <div class="prompt output_prompt">Out[84]:</div>
+    <div class="prompt output_prompt">Out[29]:</div>
 
 
 
@@ -14496,13 +14446,13 @@ Wall time: 3.44 s
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[85]:</div>
+<div class="prompt input_prompt">In&nbsp;[30]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython2"><pre><span></span><span class="k">def</span> <span class="nf">info3</span><span class="p">(</span><span class="n">file_pdf</span><span class="p">):</span>
     <span class="n">col_width</span> <span class="o">=</span> <span class="mi">35</span>
     <span class="n">col_left_align</span> <span class="o">=</span> <span class="p">[</span><span class="mi">50</span><span class="p">,</span><span class="mi">325</span><span class="p">,</span><span class="mi">400</span><span class="p">,</span><span class="mi">532</span><span class="p">]</span>
-    <span class="n">row_space</span> <span class="o">=</span> <span class="mf">13.5</span>
+    <span class="n">row_space</span> <span class="o">=</span> <span class="mf">13.6</span>
     <span class="n">row_height</span> <span class="o">=</span> <span class="mf">12.4</span>
     <span class="n">bottom_corner_dif</span> <span class="o">=</span> <span class="mf">115.5</span>
 
@@ -14518,8 +14468,7 @@ Wall time: 3.44 s
                      <span class="n">row_height</span><span class="o">=</span><span class="n">row_height</span><span class="p">,</span>
                      <span class="n">row_space</span> <span class="o">=</span> <span class="n">row_space</span><span class="p">,</span>
                      <span class="n">bottom_corner_dif</span><span class="o">=</span><span class="n">bottom_corner_dif</span><span class="p">,</span>
-                     <span class="n">title</span> <span class="o">=</span> <span class="s2">&quot;Table 2&quot;</span>
-     <span class="p">)</span>
+                     <span class="n">title</span> <span class="o">=</span> <span class="s2">&quot;Table 2&quot;</span><span class="p">)</span>
 
     <span class="k">return</span> <span class="n">table</span>
 </pre></div>
@@ -14531,10 +14480,11 @@ Wall time: 3.44 s
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[30]:</div>
+<div class="prompt input_prompt">In&nbsp;[31]:</div>
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-ipython2"><pre><span></span><span class="n">info3</span><span class="p">(</span><span class="n">file_pdf</span><span class="p">)</span>
+<div class=" highlight hl-ipython2"><pre><span></span><span class="n">df</span> <span class="o">=</span> <span class="n">info3</span><span class="p">(</span><span class="n">file_pdf</span><span class="p">)</span>
+<span class="n">df</span>
 </pre></div>
 
     </div>
@@ -14547,7 +14497,7 @@ Wall time: 3.44 s
 
 <div class="output_area">
 
-    <div class="prompt output_prompt">Out[30]:</div>
+    <div class="prompt output_prompt">Out[31]:</div>
 
 
 
@@ -14584,7 +14534,7 @@ Wall time: 3.44 s
  [&#39;Agriculture, Forestry, Fishing and Hunting&#39;, &#39;5,622&#39;, &#39;6,356&#39;, &#39;88.5%&#39;],
  [&#39;Mining, Quarrying, and Oil and Gas Extraction&#39;, &#39;2,650&#39;, &#39;7,942&#39;, &#39;33.4%&#39;],
  [&#39;Utilities&#39;, &#39;2,094&#39;, &#39;17,238&#39;, &#39;12.1%&#39;],
- [&#39;Utilities Total&#39;, &#39;2,094 761,520&#39;, &#39;17,238 1,586,323&#39;, &#39;12.1% 48.0%&#39;]]</pre>
+ [&#39;Total&#39;, &#39;761,520&#39;, &#39;1,586,323&#39;, &#39;48.0%&#39;]]</pre>
 </div>
 
 </div>
@@ -14596,73 +14546,17 @@ Wall time: 3.44 s
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h2 id="How-about-several-pdf's-at-the-same-time?">How about several pdf's at the same time?<a class="anchor-link" href="#How-about-several-pdf's-at-the-same-time?">&#182;</a></h2>
+<h3 id="To-pandas">To pandas<a class="anchor-link" href="#To-pandas">&#182;</a></h3>
 </div>
 </div>
-</div>
-<div class="cell border-box-sizing code_cell rendered">
-<div class="input">
-<div class="prompt input_prompt">In&nbsp;[31]:</div>
-<div class="inner_cell">
-    <div class="input_area">
-<div class=" highlight hl-ipython2"><pre><span></span><span class="k">def</span> <span class="nf">process_file</span><span class="p">(</span><span class="n">path_file</span><span class="p">):</span>
-    <span class="n">file_pdf</span> <span class="o">=</span> <span class="n">load_pdf</span><span class="p">(</span><span class="n">path_file</span><span class="p">)</span>
-    <span class="n">d</span> <span class="o">=</span> <span class="nb">dict</span><span class="p">()</span>
-    <span class="n">d</span><span class="p">[</span><span class="s1">&#39;file&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="n">path_file</span><span class="o">.</span><span class="n">split</span><span class="p">(</span><span class="s1">&#39;/&#39;</span><span class="p">)[</span><span class="o">-</span><span class="mi">1</span><span class="p">]</span>
-    <span class="n">d</span><span class="o">.</span><span class="n">update</span><span class="p">(</span><span class="n">info1</span><span class="p">(</span><span class="n">file_pdf</span><span class="p">))</span>
-    <span class="n">x</span> <span class="o">=</span> <span class="n">info2</span><span class="p">(</span><span class="n">file_pdf</span><span class="p">)</span>
-    <span class="n">d</span><span class="p">[</span><span class="s1">&#39;industry&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="n">x</span>
-    <span class="n">x</span> <span class="o">=</span> <span class="n">info3</span><span class="p">(</span><span class="n">file_pdf</span><span class="p">)</span>
-    <span class="n">d</span><span class="p">[</span><span class="s1">&#39;employment&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="n">x</span>
-    <span class="k">return</span> <span class="n">d</span>
-</pre></div>
-
-    </div>
-</div>
-</div>
-
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
 <div class="prompt input_prompt">In&nbsp;[32]:</div>
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-ipython2"><pre><span></span><span class="c1"># https://stackoverflow.com/questions/29494001/how-can-i-abort-a-task-in-a-multiprocessing-pool-after-a-timeout</span>
-<span class="k">def</span> <span class="nf">abortable_worker</span><span class="p">(</span><span class="n">func</span><span class="p">,</span> <span class="o">*</span><span class="n">args</span><span class="p">,</span> <span class="o">**</span><span class="n">kwargs</span><span class="p">):</span>
-    <span class="n">timeout</span> <span class="o">=</span> <span class="n">kwargs</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="s1">&#39;timeout&#39;</span><span class="p">,</span> <span class="bp">None</span><span class="p">)</span>
-    <span class="n">p</span> <span class="o">=</span> <span class="n">ThreadPool</span><span class="p">(</span><span class="mi">1</span><span class="p">)</span>
-    <span class="n">res</span> <span class="o">=</span> <span class="n">p</span><span class="o">.</span><span class="n">apply_async</span><span class="p">(</span><span class="n">func</span><span class="p">,</span> <span class="n">args</span><span class="o">=</span><span class="n">args</span><span class="p">)</span>
-    <span class="k">try</span><span class="p">:</span>
-        <span class="n">out</span> <span class="o">=</span> <span class="n">res</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="n">timeout</span><span class="p">)</span>  <span class="c1"># Wait timeout seconds for func to complete.</span>
-        <span class="k">return</span> <span class="n">out</span>
-    <span class="k">except</span> <span class="n">multiprocessing</span><span class="o">.</span><span class="n">TimeoutError</span><span class="p">:</span>
-        <span class="k">print</span><span class="p">(</span><span class="s2">&quot;Aborting due to timeout &quot;</span><span class="p">)</span>
-        <span class="n">p</span><span class="o">.</span><span class="n">terminate</span><span class="p">()</span>
-        <span class="k">raise</span>
-</pre></div>
-
-    </div>
-</div>
-</div>
-
-</div>
-<div class="cell border-box-sizing code_cell rendered">
-<div class="input">
-<div class="prompt input_prompt">In&nbsp;[33]:</div>
-<div class="inner_cell">
-    <div class="input_area">
-<div class=" highlight hl-ipython2"><pre><span></span><span class="k">if</span> <span class="vm">__name__</span> <span class="o">==</span> <span class="s1">&#39;__main__&#39;</span><span class="p">:</span>    
-    <span class="n">result</span> <span class="o">=</span> <span class="nb">list</span><span class="p">()</span>
-    <span class="n">pool</span> <span class="o">=</span> <span class="n">multiprocessing</span><span class="o">.</span><span class="n">Pool</span><span class="p">(</span><span class="n">maxtasksperchild</span><span class="o">=</span><span class="mi">1</span><span class="p">)</span>
-    <span class="n">files</span> <span class="o">=</span> <span class="n">list_files</span><span class="p">(</span><span class="n">path_s3</span><span class="p">)</span>
-    <span class="n">files</span> <span class="o">=</span> <span class="n">files</span><span class="p">[</span><span class="mi">0</span><span class="p">:</span><span class="mi">4</span><span class="p">]</span>
-    <span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="n">files</span><span class="p">:</span>
-        <span class="k">print</span> <span class="n">i</span>
-        <span class="n">abortable_func</span> <span class="o">=</span> <span class="n">partial</span><span class="p">(</span><span class="n">abortable_worker</span><span class="p">,</span> <span class="n">process_file</span><span class="p">,</span> <span class="n">timeout</span><span class="o">=</span><span class="mi">60</span><span class="p">)</span>
-        <span class="n">path_file</span> <span class="o">=</span> <span class="n">path</span><span class="p">(</span><span class="n">path_s3</span><span class="p">,</span><span class="n">i</span><span class="p">)</span>
-        <span class="n">pool</span><span class="o">.</span><span class="n">apply_async</span><span class="p">(</span><span class="n">abortable_func</span><span class="p">,</span> <span class="n">args</span><span class="o">=</span><span class="p">(</span><span class="n">path_file</span><span class="p">,</span> <span class="p">),</span> <span class="n">callback</span><span class="o">=</span><span class="n">result</span><span class="o">.</span><span class="n">append</span><span class="p">)</span>
-    <span class="n">pool</span><span class="o">.</span><span class="n">close</span><span class="p">()</span>
-    <span class="n">pool</span><span class="o">.</span><span class="n">join</span><span class="p">()</span>
+<div class=" highlight hl-ipython2"><pre><span></span><span class="n">columns</span> <span class="o">=</span> <span class="n">df</span><span class="o">.</span><span class="n">pop</span><span class="p">(</span><span class="mi">0</span><span class="p">)</span>
+<span class="n">pd</span><span class="o">.</span><span class="n">DataFrame</span><span class="p">(</span><span class="n">df</span><span class="p">,</span><span class="n">columns</span><span class="o">=</span><span class="n">columns</span><span class="p">)</span>
 </pre></div>
 
     </div>
@@ -14675,329 +14569,172 @@ Wall time: 3.44 s
 
 <div class="output_area">
 
-    <div class="prompt"></div>
+    <div class="prompt output_prompt">Out[32]:</div>
 
 
-<div class="output_subarea output_stream output_stdout output_text">
-<pre>Alabama
-Alaska
-American_Samoa
-Arizona
-</pre>
+
+<div class="output_html rendered_html output_subarea output_execute_result">
+<div>
+<style>
+    .dataframe thead tr:only-child th {
+        text-align: right;
+    }
+
+    .dataframe thead th {
+        text-align: left;
+    }
+
+    .dataframe tbody tr th {
+        vertical-align: top;
+    }
+</style>
+<table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>Industry</th>
+      <th>Small Business Employment</th>
+      <th>Total Private Employment</th>
+      <th>Small Business Emp Share</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>0</th>
+      <td>Health Care and Social Assistance</td>
+      <td>113,580</td>
+      <td>240,549</td>
+      <td>47.2%</td>
+    </tr>
+    <tr>
+      <th>1</th>
+      <td>Accommodation and Food Services</td>
+      <td>89,707</td>
+      <td>161,421</td>
+      <td>55.6%</td>
+    </tr>
+    <tr>
+      <th>2</th>
+      <td>Retail Trade</td>
+      <td>87,257</td>
+      <td>222,277</td>
+      <td>39.3%</td>
+    </tr>
+    <tr>
+      <th>3</th>
+      <td>Manufacturing</td>
+      <td>79,632</td>
+      <td>242,093</td>
+      <td>32.9%</td>
+    </tr>
+    <tr>
+      <th>4</th>
+      <td>Other Services (except Public Administration)</td>
+      <td>68,770</td>
+      <td>80,073</td>
+      <td>85.9%</td>
+    </tr>
+    <tr>
+      <th>5</th>
+      <td>Construction</td>
+      <td>65,147</td>
+      <td>78,318</td>
+      <td>83.2%</td>
+    </tr>
+    <tr>
+      <th>6</th>
+      <td>Professional, Scientiﬁc, and Technical Services</td>
+      <td>57,856</td>
+      <td>92,520</td>
+      <td>62.5%</td>
+    </tr>
+    <tr>
+      <th>7</th>
+      <td>Administrative, Support, and Waste Management</td>
+      <td>44,577</td>
+      <td>133,720</td>
+      <td>33.3%</td>
+    </tr>
+    <tr>
+      <th>8</th>
+      <td>Wholesale Trade</td>
+      <td>44,232</td>
+      <td>72,175</td>
+      <td>61.3%</td>
+    </tr>
+    <tr>
+      <th>9</th>
+      <td>Finance and Insurance</td>
+      <td>24,832</td>
+      <td>69,332</td>
+      <td>35.8%</td>
+    </tr>
+    <tr>
+      <th>10</th>
+      <td>Transportation and Warehousing</td>
+      <td>24,484</td>
+      <td>58,471</td>
+      <td>41.9%</td>
+    </tr>
+    <tr>
+      <th>11</th>
+      <td>Real Estate and Rental and Leasing</td>
+      <td>15,577</td>
+      <td>23,257</td>
+      <td>67.0%</td>
+    </tr>
+    <tr>
+      <th>12</th>
+      <td>Educational Services</td>
+      <td>13,791</td>
+      <td>28,969</td>
+      <td>47.6%</td>
+    </tr>
+    <tr>
+      <th>13</th>
+      <td>Arts, Entertainment, and Recreation</td>
+      <td>11,858</td>
+      <td>17,165</td>
+      <td>69.1%</td>
+    </tr>
+    <tr>
+      <th>14</th>
+      <td>Information</td>
+      <td>9,854</td>
+      <td>34,447</td>
+      <td>28.6%</td>
+    </tr>
+    <tr>
+      <th>15</th>
+      <td>Agriculture, Forestry, Fishing and Hunting</td>
+      <td>5,622</td>
+      <td>6,356</td>
+      <td>88.5%</td>
+    </tr>
+    <tr>
+      <th>16</th>
+      <td>Mining, Quarrying, and Oil and Gas Extraction</td>
+      <td>2,650</td>
+      <td>7,942</td>
+      <td>33.4%</td>
+    </tr>
+    <tr>
+      <th>17</th>
+      <td>Utilities</td>
+      <td>2,094</td>
+      <td>17,238</td>
+      <td>12.1%</td>
+    </tr>
+    <tr>
+      <th>18</th>
+      <td>Total</td>
+      <td>761,520</td>
+      <td>1,586,323</td>
+      <td>48.0%</td>
+    </tr>
+  </tbody>
+</table>
 </div>
-</div>
-
-</div>
-</div>
-
-</div>
-<div class="cell border-box-sizing code_cell rendered">
-<div class="input">
-<div class="prompt input_prompt">In&nbsp;[34]:</div>
-<div class="inner_cell">
-    <div class="input_area">
-<div class=" highlight hl-ipython2"><pre><span></span><span class="n">result</span>
-</pre></div>
-
-    </div>
-</div>
-</div>
-
-<div class="output_wrapper">
-<div class="output">
-
-
-<div class="output_area">
-
-    <div class="prompt output_prompt">Out[34]:</div>
-
-
-
-
-<div class="output_text output_subarea output_execute_result">
-<pre>[{&#39;Alaskan-owned&#39;: &#39;Native American/Alaskan-owned l 27.0%&#39;,
-  &#39;American-owned&#39;: &#39;African American-owned l 28.7%&#39;,
-  &#39;Asian-owned&#39;: &#39;Asian-owned l 35.4%&#39;,
-  &#39;Hispanic-owned&#39;: &#39;Hispanic-owned l 51.5%&#39;,
-  &#39;Islander-owned&#39;: u&#39;Hawaiian/Paci\ufb01c Islander-owned l -16.9%&#39;,
-  &#39;Minority-owned&#39;: &#39;Minority-owned l 30.7%&#39;,
-  &#39;Nonminority-owned&#39;: &#39;Nonminority-owned l -8.6%&#39;,
-  &#39;employment&#39;: [[&#39;Industry&#39;,
-    &#39;Small Business Employment&#39;,
-    &#39;Total Private Employment&#39;,
-    &#39;Small Business Emp Share&#39;],
-   [&#39;Health Care and Social Assistance&#39;, &#39;113,580&#39;, &#39;240,549&#39;, &#39;47.2%&#39;],
-   [&#39;Accommodation and Food Services&#39;, &#39;89,707&#39;, &#39;161,421&#39;, &#39;55.6%&#39;],
-   [&#39;Retail Trade&#39;, &#39;87,257&#39;, &#39;222,277&#39;, &#39;39.3%&#39;],
-   [&#39;Manufacturing&#39;, &#39;79,632&#39;, &#39;242,093&#39;, &#39;32.9%&#39;],
-   [&#39;Other Services (except Public Administration)&#39;,
-    &#39;68,770&#39;,
-    &#39;80,073&#39;,
-    &#39;85.9%&#39;],
-   [&#39;Construction&#39;, &#39;65,147&#39;, &#39;78,318&#39;, &#39;83.2%&#39;],
-   [u&#39;Professional, Scienti\ufb01c, and Technical Services&#39;,
-    &#39;57,856&#39;,
-    &#39;92,520&#39;,
-    &#39;62.5%&#39;],
-   [&#39;Administrative, Support, and Waste Management&#39;,
-    &#39;44,577&#39;,
-    &#39;133,720&#39;,
-    &#39;33.3%&#39;],
-   [&#39;Wholesale Trade&#39;, &#39;44,232&#39;, &#39;72,175&#39;, &#39;61.3%&#39;],
-   [&#39;Finance and Insurance&#39;, &#39;24,832&#39;, &#39;69,332&#39;, &#39;35.8%&#39;],
-   [&#39;Transportation and Warehousing&#39;, &#39;24,484&#39;, &#39;58,471&#39;, &#39;41.9%&#39;],
-   [&#39;Real Estate and Rental and Leasing&#39;, &#39;15,577&#39;, &#39;23,257&#39;, &#39;67.0%&#39;],
-   [&#39;Educational Services&#39;, &#39;13,791&#39;, &#39;28,969&#39;, &#39;47.6%&#39;],
-   [&#39;Arts, Entertainment, and Recreation&#39;, &#39;11,858&#39;, &#39;17,165&#39;, &#39;69.1%&#39;],
-   [&#39;Information&#39;, &#39;9,854&#39;, &#39;34,447&#39;, &#39;28.6%&#39;],
-   [&#39;Agriculture, Forestry, Fishing and Hunting&#39;, &#39;5,622&#39;, &#39;6,356&#39;, &#39;88.5%&#39;],
-   [&#39;Mining, Quarrying, and Oil and Gas Extraction&#39;,
-    &#39;2,650&#39;,
-    &#39;7,942&#39;,
-    &#39;33.4%&#39;],
-   [&#39;Utilities&#39;, &#39;2,094&#39;, &#39;17,238&#39;, &#39;12.1%&#39;],
-   [&#39;Utilities Total&#39;, &#39;2,094 761,520&#39;, &#39;17,238 1,586,323&#39;, &#39;12.1% 48.0%&#39;]],
-  &#39;file&#39;: &#39;Alabama.pdf&#39;,
-  &#39;industry&#39;: [[&#39;Industry&#39;,
-    &#39;1-499 Employees&#39;,
-    &#39;1-19 Employees&#39;,
-    &#39;Nonemployer Firms&#39;,
-    &#39;Total Small Firms&#39;],
-   [&#39;Retail Trade&#39;, &#39;10,674&#39;, &#39;9,627&#39;, &#39;27,992&#39;, &#39;38,666&#39;],
-   [&#39;Other Services (except Public Administration)&#39;,
-    &#39;10,042&#39;,
-    &#39;9,332&#39;,
-    &#39;63,575&#39;,
-    &#39;73,617&#39;],
-   [u&#39;Professional, Scienti\ufb01c, and Technical Services&#39;,
-    &#39;8,081&#39;,
-    &#39;7,378&#39;,
-    &#39;31,099&#39;,
-    &#39;39,180&#39;],
-   [&#39;Health Care and Social Assistance&#39;, &#39;7,823&#39;, &#39;6,670&#39;, &#39;21,808&#39;, &#39;29,631&#39;],
-   [&#39;Construction&#39;, &#39;7,143&#39;, &#39;6,373&#39;, &#39;39,463&#39;, &#39;46,606&#39;],
-   [&#39;Accommodation and Food Services&#39;, &#39;5,525&#39;, &#39;4,255&#39;, &#39;4,889&#39;, &#39;10,414&#39;],
-   [&#39;Wholesale Trade&#39;, &#39;3,785&#39;, &#39;2,974&#39;, &#39;5,061&#39;, &#39;8,846&#39;],
-   [&#39;Manufacturing&#39;, &#39;3,377&#39;, &#39;2,349&#39;, &#39;4,425&#39;, &#39;7,802&#39;],
-   [&#39;Administrative, Support, and Waste Management&#39;,
-    &#39;3,355&#39;,
-    &#39;2,842&#39;,
-    &#39;37,265&#39;,
-    &#39;40,620&#39;],
-   [&#39;Finance and Insurance&#39;, &#39;2,916&#39;, &#39;2,582&#39;, &#39;7,842&#39;, &#39;10,758&#39;],
-   [&#39;Real Estate and Rental and Leasing&#39;,
-    &#39;2,799&#39;,
-    &#39;2,590&#39;,
-    &#39;29,081&#39;,
-    &#39;31,880&#39;],
-   [&#39;Transportation and Warehousing&#39;, &#39;2,197&#39;, &#39;1,834&#39;, &#39;12,669&#39;, &#39;14,866&#39;],
-   [&#39;Arts, Entertainment, and Recreation&#39;, &#39;1,003&#39;, &#39;860&#39;, &#39;11,253&#39;, &#39;12,256&#39;],
-   [&#39;Agriculture, Forestry, Fishing and Hunting&#39;,
-    &#39;768&#39;,
-    &#39;715&#39;,
-    &#39;4,378&#39;,
-    &#39;5,146&#39;],
-   [&#39;Educational Services&#39;, &#39;746&#39;, &#39;574&#39;, &#39;6,894&#39;, &#39;7,640&#39;],
-   [&#39;Information&#39;, &#39;617&#39;, &#39;489&#39;, &#39;2,930&#39;, &#39;3,547&#39;],
-   [&#39;Mining, Quarrying, and Oil and Gas Extraction&#39;,
-    &#39;149&#39;,
-    &#39;103&#39;,
-    &#39;698&#39;,
-    &#39;847&#39;],
-   [&#39;Utilities&#39;, &#39;92&#39;, &#39;64&#39;, &#39;256&#39;, &#39;348&#39;],
-   [&#39;Total&#39;, &#39;71,092&#39;, &#39;61,611&#39;, &#39;311,578&#39;, &#39;382,670&#39;]]},
- {&#39;Alaskan-owned&#39;: &#39;Native American/Alaskan-owned l 9.3%&#39;,
-  &#39;American-owned&#39;: &#39;African American-owned l 22.2%&#39;,
-  &#39;Asian-owned&#39;: &#39;Asian-owned l 41.2%&#39;,
-  &#39;Hispanic-owned&#39;: &#39;Hispanic-owned l -&#39;,
-  &#39;Islander-owned&#39;: u&#39;Hawaiian/Paci\ufb01c Islander-owned l 32.8%&#39;,
-  &#39;Minority-owned&#39;: &#39;Minority-owned l 16.5%&#39;,
-  &#39;Nonminority-owned&#39;: &#39;Nonminority-owned l -2.3%&#39;,
-  &#39;employment&#39;: [[&#39;Industry&#39;,
-    &#39;Small Business Employment&#39;,
-    &#39;Total Private Employment&#39;,
-    &#39;Small Business Emp Share&#39;],
-   [&#39;Health Care and Social Assistance&#39;, &#39;28,365&#39;, &#39;48,057&#39;, &#39;59.0%&#39;],
-   [&#39;Accommodation and Food Services&#39;, &#39;20,154&#39;, &#39;27,929&#39;, &#39;72.2%&#39;],
-   [&#39;Retail Trade&#39;, &#39;14,856&#39;, &#39;33,175&#39;, &#39;44.8%&#39;],
-   [&#39;Construction&#39;, &#39;12,276&#39;, &#39;19,200&#39;, &#39;63.9%&#39;],
-   [u&#39;Professional, Scienti\ufb01c, and Technical Services&#39;,
-    &#39;10,627&#39;,
-    &#39;18,996&#39;,
-    &#39;55.9%&#39;],
-   [&#39;Other Services (except Public Administration)&#39;,
-    &#39;9,327&#39;,
-    &#39;10,044&#39;,
-    &#39;92.9%&#39;],
-   [&#39;Administrative, Support, and Waste Management&#39;,
-    &#39;7,517&#39;,
-    &#39;19,279&#39;,
-    &#39;39.0%&#39;],
-   [&#39;Transportation and Warehousing&#39;, &#39;6,894&#39;, &#39;19,097&#39;, &#39;36.1%&#39;],
-   [&#39;Wholesale Trade&#39;, &#39;5,051&#39;, &#39;9,041&#39;, &#39;55.9%&#39;],
-   [&#39;Manufacturing&#39;, &#39;4,487&#39;, &#39;12,406&#39;, &#39;36.2%&#39;],
-   [&#39;Real Estate and Rental and Leasing&#39;, &#39;3,613&#39;, &#39;4,550&#39;, &#39;79.4%&#39;],
-   [&#39;Finance and Insurance&#39;, &#39;3,552&#39;, &#39;7,512&#39;, &#39;47.3%&#39;],
-   [&#39;Arts, Entertainment, and Recreation&#39;, &#39;3,119&#39;, &#39;4,678&#39;, &#39;66.7%&#39;],
-   [&#39;Educational Services&#39;, &#39;2,727&#39;, &#39;3,503&#39;, &#39;77.8%&#39;],
-   [&#39;Mining, Quarrying, and Oil and Gas Extraction&#39;,
-    &#39;2,347&#39;,
-    &#39;13,029&#39;,
-    &#39;18.0%&#39;],
-   [&#39;Information&#39;, &#39;2,329&#39;, &#39;6,561&#39;, &#39;35.5%&#39;],
-   [&#39;Utilities&#39;, &#39;1,867&#39;, &#39;2,074&#39;, &#39;90.0%&#39;],
-   [&#39;Agriculture, Forestry, Fishing and Hunting&#39;, &#39;737&#39;, &#39;969&#39;, &#39;76.1%&#39;],
-   [&#39;Agriculture, Forestry, Fishing and Hunting Total&#39;,
-    &#39;737 139,845&#39;,
-    &#39;969 260,100&#39;,
-    &#39;76.1% 53.8%&#39;]],
-  &#39;file&#39;: &#39;Alaska.pdf&#39;,
-  &#39;industry&#39;: [[&#39;Industry&#39;,
-    &#39;1-499 Employees&#39;,
-    &#39;1-19 Employees&#39;,
-    &#39;Nonemployer Firms&#39;,
-    &#39;Total Small Firms&#39;],
-   [&#39;Construction&#39;, &#39;2,324&#39;, &#39;2,197&#39;, &#39;4,499&#39;, &#39;6,823&#39;],
-   [&#39;Health Care and Social Assistance&#39;, &#39;1,941&#39;, &#39;1,702&#39;, &#39;3,616&#39;, &#39;5,557&#39;],
-   [&#39;Retail Trade&#39;, &#39;1,762&#39;, &#39;1,578&#39;, &#39;3,988&#39;, &#39;5,750&#39;],
-   [&#39;Accommodation and Food Services&#39;, &#39;1,754&#39;, &#39;1,504&#39;, &#39;1,554&#39;, &#39;3,308&#39;],
-   [&#39;Other Services (except Public Administration)&#39;,
-    &#39;1,649&#39;,
-    &#39;1,554&#39;,
-    &#39;5,558&#39;,
-    &#39;7,207&#39;],
-   [u&#39;Professional, Scienti\ufb01c, and Technical Services&#39;,
-    &#39;1,621&#39;,
-    &#39;1,462&#39;,
-    &#39;6,499&#39;,
-    &#39;8,120&#39;],
-   [&#39;Administrative, Support, and Waste Management&#39;,
-    &#39;923&#39;,
-    &#39;833&#39;,
-    &#39;3,155&#39;,
-    &#39;4,078&#39;],
-   [&#39;Transportation and Warehousing&#39;, &#39;770&#39;, &#39;676&#39;, &#39;2,277&#39;, &#39;3,047&#39;],
-   [&#39;Real Estate and Rental and Leasing&#39;, &#39;742&#39;, &#39;694&#39;, &#39;4,613&#39;, &#39;5,355&#39;],
-   [&#39;Arts, Entertainment, and Recreation&#39;, &#39;508&#39;, &#39;466&#39;, &#39;3,173&#39;, &#39;3,681&#39;],
-   [&#39;Wholesale Trade&#39;, &#39;443&#39;, &#39;329&#39;, &#39;563&#39;, &#39;1,006&#39;],
-   [&#39;Agriculture, Forestry, Fishing and Hunting&#39;,
-    &#39;430&#39;,
-    &#39;423&#39;,
-    &#39;9,254&#39;,
-    &#39;9,684&#39;],
-   [&#39;Manufacturing&#39;, &#39;429&#39;, &#39;372&#39;, &#39;1,090&#39;, &#39;1,519&#39;],
-   [&#39;Finance and Insurance&#39;, &#39;357&#39;, &#39;311&#39;, &#39;758&#39;, &#39;1,115&#39;],
-   [&#39;Educational Services&#39;, &#39;227&#39;, &#39;196&#39;, &#39;1,496&#39;, &#39;1,723&#39;],
-   [&#39;Information&#39;, &#39;179&#39;, &#39;140&#39;, &#39;514&#39;, &#39;693&#39;],
-   [&#39;Mining, Quarrying, and Oil and Gas Extraction&#39;,
-    &#39;117&#39;,
-    &#39;92&#39;,
-    &#39;324&#39;,
-    &#39;441&#39;],
-   [&#39;Utilities&#39;, &#39;59&#39;, &#39;38&#39;, &#39;60&#39;, &#39;119&#39;],
-   [&#39;Total&#39;, &#39;16,235&#39;, &#39;14,567&#39;, &#39;52,991&#39;, &#39;69,226&#39;]]},
- {&#39;Alaskan-owned&#39;: &#39;Native American/Alaskan-owned l 20.2%&#39;,
-  &#39;American-owned&#39;: &#39;African American-owned l 52.8%&#39;,
-  &#39;Asian-owned&#39;: &#39;Asian-owned l 35.2%&#39;,
-  &#39;Hispanic-owned&#39;: &#39;Hispanic-owned l 69.7%&#39;,
-  &#39;Islander-owned&#39;: u&#39;Hawaiian/Paci\ufb01c Islander-owned l -&#39;,
-  &#39;Minority-owned&#39;: &#39;Minority-owned l 58.8%&#39;,
-  &#39;Nonminority-owned&#39;: &#39;Nonminority-owned l -7.3%&#39;,
-  &#39;employment&#39;: [[&#39;Industry&#39;,
-    &#39;Small Business Employment&#39;,
-    &#39;Total Private Employment&#39;,
-    &#39;Small Business Emp Share&#39;],
-   [&#39;Health Care and Social Assistance&#39;, &#39;149,627&#39;, &#39;326,256&#39;, &#39;45.9%&#39;],
-   [&#39;Accommodation and Food Services&#39;, &#39;142,649&#39;, &#39;259,370&#39;, &#39;55.0%&#39;],
-   [&#39;Construction&#39;, &#39;99,722&#39;, &#39;123,236&#39;, &#39;80.9%&#39;],
-   [&#39;Retail Trade&#39;, &#39;84,127&#39;, &#39;296,132&#39;, &#39;28.4%&#39;],
-   [&#39;Administrative, Support, and Waste Management&#39;,
-    &#39;81,758&#39;,
-    &#39;233,414&#39;,
-    &#39;35.0%&#39;],
-   [u&#39;Professional, Scienti\ufb01c, and Technical Services&#39;,
-    &#39;77,807&#39;,
-    &#39;128,691&#39;,
-    &#39;60.5%&#39;],
-   [&#39;Other Services (except Public Administration)&#39;,
-    &#39;71,437&#39;,
-    &#39;84,239&#39;,
-    &#39;84.8%&#39;],
-   [&#39;Manufacturing&#39;, &#39;63,975&#39;, &#39;136,644&#39;, &#39;46.8%&#39;],
-   [&#39;Wholesale Trade&#39;, &#39;47,684&#39;, &#39;96,074&#39;, &#39;49.6%&#39;],
-   [&#39;Educational Services&#39;, &#39;28,807&#39;, &#39;72,244&#39;, &#39;39.9%&#39;],
-   [&#39;Arts, Entertainment, and Recreation&#39;, &#39;27,543&#39;, &#39;40,538&#39;, &#39;67.9%&#39;],
-   [&#39;Finance and Insurance&#39;, &#39;26,767&#39;, &#39;132,038&#39;, &#39;20.3%&#39;],
-   [&#39;Real Estate and Rental and Leasing&#39;, &#39;26,762&#39;, &#39;43,959&#39;, &#39;60.9%&#39;],
-   [&#39;Transportation and Warehousing&#39;, &#39;24,259&#39;, &#39;81,274&#39;, &#39;29.8%&#39;],
-   [&#39;Information&#39;, &#39;13,097&#39;, &#39;47,817&#39;, &#39;27.4%&#39;],
-   [&#39;Utilities&#39;, &#39;2,492&#39;, &#39;12,292&#39;, &#39;20.3%&#39;],
-   [&#39;Mining, Quarrying, and Oil and Gas Extraction&#39;,
-    &#39;2,245&#39;,
-    &#39;11,234&#39;,
-    &#39;20.0%&#39;],
-   [&#39;Agriculture, Forestry, Fishing and Hunting&#39;, &#39;1,313&#39;, &#39;1,390&#39;, &#39;94.5%&#39;],
-   [&#39;Agriculture, Forestry, Fishing and Hunting Total&#39;,
-    &#39;1,313 972,071&#39;,
-    &#39;1,390 2,126,842&#39;,
-    &#39;94.5% 45.7%&#39;]],
-  &#39;file&#39;: &#39;Arizona.pdf&#39;,
-  &#39;industry&#39;: [[&#39;Industry&#39;,
-    &#39;1-499 Employees&#39;,
-    &#39;1-19 Employees&#39;,
-    &#39;Nonemployer Firms&#39;,
-    &#39;Total Small Firms&#39;],
-   [u&#39;Professional, Scienti\ufb01c, and Technical Services&#39;,
-    &#39;14,945&#39;,
-    &#39;13,914&#39;,
-    &#39;61,844&#39;,
-    &#39;76,789&#39;],
-   [&#39;Health Care and Social Assistance&#39;,
-    &#39;12,985&#39;,
-    &#39;11,577&#39;,
-    &#39;34,786&#39;,
-    &#39;47,771&#39;],
-   [&#39;Construction&#39;, &#39;10,998&#39;, &#39;9,810&#39;, &#39;35,301&#39;, &#39;46,299&#39;],
-   [&#39;Other Services (except Public Administration)&#39;,
-    &#39;9,499&#39;,
-    &#39;8,733&#39;,
-    &#39;63,310&#39;,
-    &#39;72,809&#39;],
-   [&#39;Retail Trade&#39;, &#39;9,405&#39;, &#39;8,453&#39;, &#39;35,830&#39;, &#39;45,235&#39;],
-   [&#39;Accommodation and Food Services&#39;, &#39;7,923&#39;, &#39;5,855&#39;, &#39;5,324&#39;, &#39;13,247&#39;],
-   [&#39;Administrative, Support, and Waste Management&#39;,
-    &#39;6,711&#39;,
-    &#39;5,843&#39;,
-    &#39;38,864&#39;,
-    &#39;45,575&#39;],
-   [&#39;Real Estate and Rental and Leasing&#39;,
-    &#39;6,522&#39;,
-    &#39;6,197&#39;,
-    &#39;57,904&#39;,
-    &#39;64,426&#39;],
-   [&#39;Wholesale Trade&#39;, &#39;4,866&#39;, &#39;3,946&#39;, &#39;7,519&#39;, &#39;12,385&#39;],
-   [&#39;Finance and Insurance&#39;, &#39;4,545&#39;, &#39;4,231&#39;, &#39;14,655&#39;, &#39;19,200&#39;],
-   [&#39;Manufacturing&#39;, &#39;3,746&#39;, &#39;2,899&#39;, &#39;6,821&#39;, &#39;10,567&#39;],
-   [&#39;Transportation and Warehousing&#39;, &#39;2,436&#39;, &#39;2,050&#39;, &#39;16,827&#39;, &#39;19,263&#39;],
-   [&#39;Educational Services&#39;, &#39;1,687&#39;, &#39;1,304&#39;, &#39;10,571&#39;, &#39;12,258&#39;],
-   [&#39;Arts, Entertainment, and Recreation&#39;,
-    &#39;1,507&#39;,
-    &#39;1,204&#39;,
-    &#39;21,924&#39;,
-    &#39;23,431&#39;],
-   [&#39;Information&#39;, &#39;1,103&#39;, &#39;902&#39;, &#39;5,840&#39;, &#39;6,943&#39;],
-   [&#39;Agriculture, Forestry, Fishing and Hunting&#39;,
-    &#39;188&#39;,
-    &#39;169&#39;,
-    &#39;2,224&#39;,
-    &#39;2,412&#39;],
-   [&#39;Mining, Quarrying, and Oil and Gas Extraction&#39;,
-    &#39;167&#39;,
-    &#39;131&#39;,
-    &#39;363&#39;,
-    &#39;530&#39;],
-   [&#39;Utilities&#39;, &#39;136&#39;, &#39;115&#39;, &#39;326&#39;, &#39;462&#39;],
-   [&#39;Total&#39;, &#39;99,369&#39;, &#39;87,333&#39;, &#39;420,233&#39;, &#39;519,602&#39;]]}]</pre>
 </div>
 
 </div>
